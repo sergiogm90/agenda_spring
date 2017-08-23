@@ -1,0 +1,151 @@
+<!-- HTML 5 Ad Template from DoubleClick by Google -->
+<!DOCTYPE html>
+<html lang="en"><head>
+	<!-- Studio Enabler Required -->
+	<script src="300x600_data/jquery-2.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">  
+    <meta name="”ad.size”" content="”width=300,height=600”">
+    <script type="text/javascript">
+			var clickTag = "http://www.santaluciaseguros.es/hogariplus/";
+    </script>
+    <link rel="StyleSheet" href="300x600_data/300x600.css" type="text/css">
+	
+	<script src="300x600_data/jquery-2.js"></script>
+<script type="text/javascript">
+    
+      (function() {
+        var relegateNavigation = '';
+        var handleClickTagMessage = function(e) {
+          try {
+            var eventData = JSON.parse(e.data);
+          } catch (err) {
+            return;
+          }
+          if (eventData.isInitClickTag) {
+            if (eventData.clickTags) {
+              for (var i = 0; i < eventData.clickTags.length; i++) {
+                var clkTag = eventData.clickTags[i];
+                window[clkTag.name] = clkTag.url;
+              }
+            } else if (eventData.clickTag) {
+              window.clickTag = eventData.clickTag;
+            }
+            relegateNavigation = eventData.relegateNavigation;
+          }
+        };
+
+        if (open.call) {
+          window.open = function(open) {
+            return function(url, name, features) {
+              if (relegateNavigation === 'parent') {
+                var message = {'clickTag': url, 'isPostClickTag': true};
+                parent.postMessage(JSON.stringify(message), '*');
+              } else {
+                var args = [url, name];
+                if (features) {
+                  args.push(features);
+                }
+                open.apply(window, args);
+              }
+            };
+          }(window.open);
+        }
+
+        if (window.addEventListener) {
+          window.addEventListener(
+              'message', handleClickTagMessage, false);
+        } else {
+          window.attachEvent('onmessage', handleClickTagMessage);
+        }
+      })();
+    
+  </script></head>
+
+<body onload="init()"> <!-- Call JS Initial Function when below has loaded in -->
+	<a href="javascript:window.open(window.clickTag)">
+		<div id="container_dc">
+			<div id="content_dc">
+		
+				<div id="claim0" style="opacity: 0;">
+					<div id="claim01" style="opacity: 1;">
+						PROTEGE TU VIVIENDA DE LA FORMA MÁS COMPLETA DESDE 15€/MES* CON EL
+					</div>
+					<div id="claim02" style="opacity: 1;">
+						SEGURO DE HOGAR IPLUS 
+					</div>
+					<div id="claim03" style="opacity: 1;">
+						(*) Precio sujeto a Normas de Suscripción de la Compañía. 
+					</div>
+				</div>
+				
+			    <div id="claim1">
+		        	<div id="claim11" style="opacity: 1;">Y TENDRÁS LAS MEJORES COBERTURAS:</div>
+		        	<div class="cobertura" id="cobertura1" style="left: 10px; opacity: 1;">Robo, expoliación, hurto y vandalismo</div>
+		        	<div class="cobertura" id="cobertura2" style="left: 10px; opacity: 1;">Protección Jurídica Integral</div>
+		        	<div class="cobertura" id="cobertura3" style="left: 10px; opacity: 1;">Asistencia 24 horas</div>
+		        	<div class="cobertura" id="cobertura4" style="left: 10px; opacity: 1;">Daños por incendio, explosión,<br>humo, agua…</div>
+		        </div>
+	          
+				
+				<div id="bt_contrata"><img src="300x600_data/bt_contrata.png" alt=""></div>
+				
+				<div id="logo"><img src="300x600_data/logo_santa_lucia.png" alt=""></div>
+		    
+		    </div>
+			<button id="background_exit_dc"></button>
+		</div>
+	</a> 
+   
+<script>
+
+function resol(){
+	  $( "#background_exit_dc" ).show();
+	
+	  $( "#claim01" ).delay(300).animate({
+		opacity: 1,
+	  }, 800 ); 
+	  $( "#claim02" ).delay(700).animate({
+		opacity: 1,
+	  }, 800 ); 
+	  $( "#claim03" ).delay(900).animate({
+		opacity: 1,
+	  }, 800 ); 
+
+	  $( "#claim0" ).delay(4000).animate({
+		opacity: 0,
+	  }, 800 ); 	
+	
+	  $( "#claim11" ).delay(5200).animate({
+		opacity: 1,
+	  }, 1000 ); 
+
+	  $( "#cobertura1" ).delay(5700).animate({
+		left: 10,
+		opacity: 1,
+	  }, 500 ); 
+	  $( "#cobertura2" ).delay(6000).animate({
+		left: 10,
+		opacity: 1,
+	  }, 500 ); 
+	  $( "#cobertura3" ).delay(6300).animate({
+		left: 10,
+		opacity: 1,
+	  }, 500 ); 
+	  $( "#cobertura4" ).delay(6600).animate({
+		left: 10,
+		opacity: 1,
+	  }, 500 ); 
+
+	}
+
+
+$(document).ready(function(){
+	  
+	  setTimeout(resol, 0);
+});
+ 
+</script>
+    
+    
+
+</body></html>

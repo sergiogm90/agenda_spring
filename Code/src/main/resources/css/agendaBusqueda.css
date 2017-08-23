@@ -1,0 +1,102 @@
+.fa-pencil-square{
+    font-size: 30px!important;
+    color:white!important;
+    background-color: blue!important;
+}
+.fa-trash{
+  font-size: 30px!important;
+    background-color: red!important;;  
+}
+.listita{
+	text-align:center;
+}
+#mytable{
+    color:#000000;
+    background-color: #ffffff;
+}
+#mytable th{
+    text-align: center;
+}
+body {
+    padding-top: 50px;
+}
+
+.botonXpanse{
+  border: 1px solid #555;
+  color: #ffffff;
+  background-color: #555;
+}
+.dato{
+  font-weight: bold;
+  background-color:#B7B2B3;
+  color: #000000;
+     box-shadow: 4px 4px 4px #888888;
+     text-align: center;
+
+}
+.respuesta{
+    text-transform: uppercase;
+    color:black;
+    font-weight: bold;
+    text-align: center;
+
+}
+.tablita{
+    border-radius: 10px;
+}
+
+.dropdown.dropdown-lg .dropdown-menu {
+    margin-top: -1px;
+    padding: 6px 20px;
+}
+.input-group-btn .btn-group {
+    display: flex !important;
+}
+.btn-group .btn {
+    border-radius: 0;
+    margin-left: -1px;
+}
+.btn-group .btn:last-child {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+.btn-group .form-horizontal .btn[type="submit"] {
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+.form-horizontal .form-group {
+    margin-left: 0;
+    margin-right: 0;
+}
+.form-group .form-control:last-child {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+@media screen and (min-width: 768px) {
+    #adv-search {
+        width: 500px;
+        margin: 0 auto;
+    }
+    .dropdown.dropdown-lg {
+        position: static !important;
+    }
+    .dropdown.dropdown-lg .dropdown-menu {
+        min-width: 500px;
+    }
+
+
+}
+    .barraBusqueda{
+
+
+
+    }
+.redondoDesplegable{
+
+      margin-top: 3em;
+        margin-left: -26.5em;
+}
+.labels{
+    color: #000000;
+}
